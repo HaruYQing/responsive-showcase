@@ -1,59 +1,47 @@
 # ResponsiveShowcase
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.19.
+模擬產險官網首頁，展示 RWD 響應式網頁設計實作能力。
 
-## Development server
+## 專案動機
 
-To start a local development server, run:
+日常工作聚焦於企業內部系統開發，對資料處理、表單串接、RESTful API 整合有紮實經驗。
+為了持續學習、拓展前端技能廣度，特別透過此專案深化 RWD 響應式設計的實作能力。
+
+## 技術棧
+
+- **框架**: Angular 20 (zoneless)
+- **UI 元件庫**: Angular Material
+- **樣式**: SCSS
+- **狀態管理**: Signals + RxJS
+
+## RWD 技術亮點
+
+依內容特性選用不同的響應式手法：
+
+- **CDK `BreakpointObserver` + Signal**:用於結構性版面切換(NavBar 手機版漢堡選單 ↔ 桌面版橫向選單)
+- **CSS Grid `auto-fill` + `minmax()`**:用於卡片群組自適應欄數(商品/文章列表)，無需手動維護多組斷點
+- **傳統 Media Query**:用於漸進式視覺調整(Hero 區塊字級、Footer 欄位排列)
+
+## 元件架構
+
+```mermaid
+graph TD
+App[App] --> NavBar[NavBar]
+App --> Router[Router Outlet]
+App --> Footer[Footer]
+Router --> Home[Home]
+Home --> Hero[HeroSection]
+Home --> ProductGrid[ProductGrid]
+Home --> ArticleGrid[ArticleGrid]
+ProductGrid --> ProductCard[ProductCard]
+ArticleGrid --> ArticleCard[ArticleCard]
+```
+
+## 執行方式
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+開啟瀏覽器至 `http://localhost:4200`
