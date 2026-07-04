@@ -3,7 +3,6 @@ import { ArticleCard, Article } from '../article-card/article-card';
 
 @Component({
   selector: 'app-article-grid',
-  standalone: true,
   imports: [ArticleCard],
   templateUrl: './article-grid.html',
   styleUrl: './article-grid.scss',

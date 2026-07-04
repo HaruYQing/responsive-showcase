@@ -10,7 +10,6 @@ export interface Article {
 
 @Component({
   selector: 'app-article-card',
-  standalone: true,
   imports: [MatCardModule],
   templateUrl: './article-card.html',
   styleUrl: './article-card.scss',

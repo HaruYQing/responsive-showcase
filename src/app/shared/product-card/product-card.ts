@@ -11,7 +11,6 @@ export interface Product {
 
 @Component({
   selector: 'app-product-card',
-  standalone: true,
   imports: [MatCardModule, MatButtonModule],
   templateUrl: './product-card.html',
   styleUrl: './product-card.scss',
