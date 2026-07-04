@@ -1,0 +1,19 @@
+<footer class="footer">
+  <div class="footer-columns">
+    @for (col of footerLinks; track col.title) {
+      <div class="footer-col">
+        <h4>{{ col.title }}</h4>
+        <ul>
+          @for (item of col.items; track item) {
+            <li>
+              <a href="#">{{ item }}</a>
+            </li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; {{ currentYear }} ResponsiveShowcase. All rights reserved.</p>
+  </div>
+</footer>
