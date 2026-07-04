@@ -1,0 +1,38 @@
+// hero-section.scss
+.hero {
+  background: linear-gradient(135deg, #00695c, #00897b);
+  color: white;
+  padding: 64px 24px;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    padding: 96px 24px;
+  }
+
+  @media (min-width: 960px) {
+    padding: 120px 24px;
+  }
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+
+    @media (min-width: 960px) {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 24px;
+
+    @media (min-width: 960px) {
+      font-size: 18px;
+    }
+  }
+}
