@@ -1,0 +1,13 @@
+<mat-card>
+  <img mat-card-image [src]="product().imageUrl" [alt]="product().title" />
+  <mat-card-content>
+    @if (product().tag) {
+      <span class="tag">{{ product().tag }}</span>
+    }
+    <h3>{{ product().title }}</h3>
+    <p>{{ product().description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button color="primary">了解更多</button>
+  </mat-card-actions>
+</mat-card>
