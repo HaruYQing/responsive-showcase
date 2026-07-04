@@ -15,7 +15,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: default;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    h3,
+    p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+    }
   }
+}
+
+.title {
+  margin: 0;
 }
 
 .date {
