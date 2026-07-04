@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  @if (breakpointService.isMobile()) {
+    <button mat-icon-button (click)="toggleMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="logo">ResponsiveShowcase</span>
+  } @else {
+    <span class="logo">ResponsiveShowcase</span>
+    <span class="spacer"></span>
+    @for (item of navItems; track item) {
+      <button mat-button>{{ item }}</button>
+    }
+  }
+</mat-toolbar>
+
+@if (breakpointService.isMobile() && isMenuOpen()) {
+  <mat-nav-list>
+    @for (item of navItems; track item) {
+      <a mat-list-item (click)="toggleMenu()">{{ item }}</a>
+    }
+  </mat-nav-list>
+}
