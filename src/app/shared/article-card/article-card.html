@@ -1,0 +1,8 @@
+<mat-card class="horizontal-card">
+  <img mat-card-image [src]="article().imageUrl" [alt]="article().title" />
+  <mat-card-content>
+    <span class="date">{{ article().date }}</span>
+    <h3>{{ article().title }}</h3>
+    <p>{{ article().summary }}</p>
+  </mat-card-content>
+</mat-card>

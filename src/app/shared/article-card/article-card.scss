@@ -1,0 +1,32 @@
+.horizontal-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  img {
+    width: 160px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  mat-card-content {
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.date {
+  display: block;
+  font-size: 12px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.mdc-card__media:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
