@@ -8,5 +8,6 @@ import { ArticleCard, Article } from '../article-card/article-card';
   styleUrl: './article-grid.scss',
 })
 export class ArticleGrid {
+  title = input.required<string>();
   articles = input.required<Article[]>();
 }

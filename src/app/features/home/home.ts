@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { MOCK_PRODUCTS } from '../../core/data/mock-products';
-import { ProductGrid } from '../../shared/product-grid/product-grid';
 import { MOCK_ARTICLES } from '../../core/data/mock-articles';
+import { MOCK_PRODUCTS } from '../../core/data/mock-products';
 import { ArticleGrid } from '../../shared/article-grid/article-grid';
+import { ProductGrid } from '../../shared/product-grid/product-grid';
 import { HeroSection } from '../hero-section/hero-section';
 
 @Component({

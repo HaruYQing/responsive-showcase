@@ -8,5 +8,6 @@ import { ProductCard, Product } from '../product-card/product-card';
   styleUrl: './product-grid.scss',
 })
 export class ProductGrid {
+  title = input.required<string>();
   products = input.required<Product[]>();
 }
