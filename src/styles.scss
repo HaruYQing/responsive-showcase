@@ -32,10 +32,23 @@ body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
+// ===== helper =====
 .--section-title {
   margin: 0;
   padding: 0;
   font-size: 24px;
   font-weight: 500;
   color: #00695c;
+}
+
+.--side-p-80 {
+  padding: 0 80px;
+}
+
+.--side-p-40 {
+  padding: 0 40px;
+}
+
+.--side-p-16 {
+  padding: 0 16px;
 }
