@@ -1,0 +1,5 @@
+<div class="grid">
+  @for (article of articles(); track article.title) {
+    <app-article-card [article]="article" />
+  }
+</div>
